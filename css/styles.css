@@ -172,3 +172,54 @@ a:hover {
   width: 115px;
   border-style: ridge;
 }
+
+/* Loaded after styles.css. Only adds the new project cards. */
+
+.project-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+@media (min-width: 700px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project {
+  padding: 1.25rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.project h3 {
+  margin: 0 0 .5rem;
+}
+
+.project p {
+  margin: 0 0 .6rem;
+}
+
+.project .stack {
+  font-size: .9rem;
+  color: #555;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.project-links a {
+  font-weight: 700;
+}
+
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #1a56db;
+  outline-offset: 3px;
+}
