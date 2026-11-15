@@ -1,128 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamal | Full-Stack Developer</title>
-  <meta name="description" content="Jamal, Full-Stack Developer in training at YouCode. HTML, CSS, JavaScript, Git and team projects.">
-  <meta property="og:title" content="Jamal | Full-Stack Developer">
-  <meta property="og:description" content="HTML, CSS, JavaScript, Git and team projects.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jamal | Web Developer</title>
+  <meta name="description"
+    content="Jamal, web developer in training at YouCode, Morocco. HTML, CSS, JavaScript, Git and team projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Public+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/extra.css">
-  <link rel="icon" href="favicon.ico">
+
+
 </head>
+
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="">
-    <h1>I'm Jamal.</h1>
-    <h2>a <span>Full-Stack </span>Developer.</h2>
-    <img class="cloud-bottom" src="images/cloud.png" alt="">
-    <img src="images/mountain.png" alt="">
-  </div>
 
-  <main class="middle-container">
-    <div class="profile">
-      <img class="mycvweppic" src="images/forlinkding.jpg" alt="Portrait of Jamal">
-      <h2>Hello.</h2>
-      <p class="intro">I'm Jamal, a web developer student at YouCode in Morocco. I'm training to become a Full-Stack Developer. I build clean, responsive websites and I learn by finishing real projects, alone and in a team, with Git and Scrum.</p>
-    </div>
-
-    <hr class="hr">
-
-    <div class="skills">
-      <h2>My Skills.</h2>
-
-      <div class="skill-row">
-        <img class="front-end-img" src="images/front-end-programming.png" alt="">
-        <h3>Front-End Development</h3>
-        <p>HTML5 – semantic and accessible structure</p>
-        <p>CSS3 – Flexbox, responsive design, Tailwind and Bootstrap</p>
-        <p>JavaScript (ES6+) – modules, DOM, localStorage, interactive sites</p>
-      </div>
-
-      <div class="skill-row">
-        <img class="front-end-img" src="images/front-end-programming.png" alt="">
-        <h3>Back-End Development</h3>
-
-         <p>  Node.js and Express – learning</p>
-        <p>  databases and SQL – learning</p>
-      </div>
-
-      <div class="skill-row">
-        <img class="front-end-img" src="images/front-end-programming.png" alt="">
-        <h3>Tools and Teamwork</h3>
-        <p>Git and GitHub – branches, commits, GitHub Pages</p>
-        <p>Jira and Scrum – sprints and task boards</p>
-        <p>Vercel – deploying websites</p>
+  <header class="hero">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main">
+        <a href="#top"><strong>Jamal</strong></a>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-main" id="top">
+        <h1 aria-label="I’m Jamal. I build websites.">
+          <span><i>I’m Jamal.</i></span>
+          <span><i>I build</i></span>
+          <span><i>websites.</i></span>
+        </h1>
+        <p class="lede">Web developer in training at YouCode, Morocco. I learn by finishing real projects, alone and in
+          a team, and I’m aiming to become a full-stack developer.</p>
+        <a class="cta" href="#contact">Get in touch</a>
+        <span class="status">Open to internships and freelance work</span>
       </div>
     </div>
+  </header>
 
-    <hr class="hr">
-
-    <div class="skills" id="projects">
-      <h2>My Projects.</h2>
-      <div class="skill-row">
-        <img class="idea-img" src="images/idea.png" alt="">
-        <p>Each project helped me improve my layout, responsive design and JavaScript.</p>
+  <main>
+    <section class="about" aria-labelledby="about-h">
+      <div class="wrap two">
+        <h2 id="about-h">About</h2>
+        <div>
+          <p>I’m a student at YouCode, a coding school in Morocco. I write clean, responsive pages with HTML, CSS and
+            JavaScript, and I care about structure that is accessible and easy to read.</p>
+          <p>Every project at school taught me something new about layout, working with data in the browser, or working
+            with a team. I use Git branches and Scrum boards on group projects, and I deploy my work online so anyone
+            can open it.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="project-list">
-        <article class="project">
-          <h3>Auchan E-Commerce</h3>
-          <p>An online shop built during a YouCode sprint.</p>
-          <p class="stack">HTML, CSS, JavaScript</p>
-          <p class="project-links">
-            <a href="https://github.com/jamal7-codes/auchan-e-commerce-4">Code</a>
-            <a href="auchan-e-commerce-4.vercel.app">Live site</a>
-          </p>
-        </article>
+    <section class="projects" id="projects" aria-labelledby="projects-h">
+      <div class="wrap">
+        <h2 id="projects-h">Projects</h2>
 
-        <article class="project">
-          <h3>Smart Stream TV</h3>
-          <p>A 5-day team project: a streaming-style site using local data and ES6 modules, with Git branches and a Jira board.</p>
-          <p class="stack">JavaScript, Tailwind, Git, Jira</p>
-          <p class="project-links">
-            <a href="https://github.com/jamal7-codes/smart-stream-tv">Code</a>
-            <a href="smart-stream-tv-azure.vercel.app">Live site</a>
-          </p>
-        </article>
+        <details name="p" open>
+          <summary>Smart Stream TV<small>Team project, 5 days · JavaScript, Tailwind, Git, Jira</small></summary>
+          <div class="detail">
+            <p>A streaming-style website built by a team in one week. It reads its content from local data, splits the
+              code into ES6 modules, and was managed on a Jira Scrum board with Git branches.</p>
+            <p class="links"><a href="https://github.com/jamal7-codes/smart-stream-tv">Code</a><a
+                href="https://smart-stream-tv-azure.vercel.app">Live site</a></p>
+          </div>
+        </details>
 
-        <article class="project">
-          <h3>Canteen Menu Manager</h3>
-          <p>A menu manager with form validation, Regex and data saved in localStorage.</p>
-          <p class="stack">JavaScript, Bootstrap, Regex, localStorage</p>
-          <p class="project-links">
-            <a href="https://github.com/jamal7-codes/b-Cantina-3">Code</a>
-            <a href="https://b3-canteen.vercel.app">Live site</a>
-          </p>
-        </article>
+        <details name="p">
+          <summary>Canteen Menu Manager<small>JavaScript, Bootstrap, Regex, localStorage</small></summary>
+          <div class="detail">
+            <p>A menu manager where the user adds and edits dishes. Forms are checked with Regex, and the data stays
+              saved in the browser with localStorage.</p>
+            <p class="links"><a href="https://github.com/jamal7-codes/b-Cantina-3">Code</a><a
+                href="https://b3-canteen.vercel.app">Live site</a></p>
+          </div>
+        </details>
 
-        <article class="project">
-          <h3>EcoArt</h3>
-          <p>A 5-page team website, mobile-first, published on GitHub Pages.</p>
-          <p class="stack">HTML, CSS, Git</p>
-          <p class="project-links">
-            <a href="https://github.com/jamal7-codes/EcoArt">Code</a>
-            <a href="https://bilalsenhaji88-jpg.github.io/EcoArt/">Live site</a>
-          </p>
-        </article>
+        <details name="p">
+          <summary>Auchan E-Commerce<small>YouCode sprint · HTML, CSS, JavaScript</small></summary>
+          <div class="detail">
+            <p>An online shop built during a school sprint. It focuses on product layout and a clear shopping flow.</p>
+            <p class="links"><a href="https://github.com/jamal7-codes/auchan-e-commerce-4">Code</a><a
+                href="https://auchan-e-commerce-4.vercel.app">Live site</a></p>
+          </div>
+        </details>
+
+        <details name="p">
+          <summary>EcoArt<small>Team project · HTML, CSS, Git</small></summary>
+          <div class="detail">
+            <p>A five-page team website, designed mobile-first and published on GitHub Pages.</p>
+            <p class="links"><a href="https://github.com/jamal7-codes/EcoArt">Code</a><a
+                href="https://bilalsenhaji88-jpg.github.io/EcoArt/">Live site</a></p>
+          </div>
+        </details>
       </div>
-    </div>
+    </section>
 
-    <hr class="hr">
+    <section id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h">Skills</h2>
+        <div class="skill-group">
+          <h3>Front-end</h3>
+          <ul>
+            <li>HTML5 <span>– semantic and accessible structure</span></li>
+            <li>CSS3 <span>– Flexbox, responsive design, Tailwind, Bootstrap</span></li>
+            <li>JavaScript ES6+ <span>– modules, DOM, localStorage</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools and teamwork</h3>
+          <ul>
+            <li>Git and GitHub <span>– branches, commits, GitHub Pages</span></li>
+            <li>Jira and Scrum <span>– sprints and task boards</span></li>
+            <li>Vercel <span>– deploying websites</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Back-end</h3>
+          <ul class="learning">
+            <li>Node.js and Express</li>
+            <li>Databases and SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <div class="contact-message">
-      <h2>Get In Touch</h2>
-      <h3>feel free to contact me.</h3>
-      <p>I'm open to internships, learning opportunities, collaborations and freelance projects. If you'd like to work together or have any questions, write to me.</p>
-      <a class="btn" href="mailto:mrjamallahssaini@gmail.com">CONTACT ME</a>
-    </div>
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <h2 id="contact-h">Let’s work together.</h2>
+        <p>I’m open to internships, learning opportunities, collaborations and freelance projects. Write to me and I
+          will answer.</p>
+        <a class="mail" href="mailto:mrjamallahssaini@gmail.com">mrjamallahssaini@gmail.com</a>
+      </div>
+    </section>
   </main>
 
-  <footer class="bottom-container">
-    <a class="footer-link" href="https://github.com/jamal7-codes">GitHub</a>
-    <a class="footer-link" href="https://www.linkedin.com/in/jamal-lahssaini-7b68792a9/">LinkedIn</a>
-    <p class="copyright">©2026 Jamal.</p>
+  <footer>
+    <div class="wrap">
+      <a href="https://github.com/jamal7-codes">GitHub</a>
+      <a href="https://www.linkedin.com/in/jamal-lahssaini-7b68792a9/">LinkedIn</a>
+      <span>© 2026 Jamal</span>
+    </div>
   </footer>
+
 </body>
+
 </html>
